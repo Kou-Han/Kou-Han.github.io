@@ -1,0 +1,72 @@
+:root {
+    --geo: #945DC4;
+    --geo-dark: #6B3F8B;
+    --element-bg: rgba(40,40,40,0.95);
+    --text-primary: rgba(255,255,255,0.92);
+    --text-secondary: rgba(255,255,255,0.68);
+}
+
+.radar-grid {
+    background: conic-gradient(from 0deg at 50% 50%, transparent 0% 25%, var(--geo) 25% 50%, transparent 50% 75%, var(--geo) 75% 100%);
+    opacity: 0.15;
+}
+
+.radar-fill {
+    background: repeating-linear-gradient(45deg, rgba(148,93,196,0.4) 0px 10px, transparent 10px 20px);
+    animation: radar-rotate 20s linear infinite;
+}
+
+details[open] {
+    border: 1px solid rgba(148,93,196,0.2);
+    background: linear-gradient(145deg, rgba(40,40,40,0.7), rgba(60,55,40,0.5));
+}
+
+details summary {
+    background: linear-gradient(90deg, var(--geo-dark) 0%, transparent 100%);
+}
+
+.voice-item {
+    background: linear-gradient(90deg, transparent 0%, rgba(148,93,196,0.05) 50%, transparent 100%);
+}
+
+.voice-item:hover {
+    background: linear-gradient(90deg, transparent 0%, rgba(148,93,196,0.1) 100%);
+}
+
+.play-btn {
+    background: var(--geo);
+}
+
+.stage, .damage-formula, .damage-info {
+    background: rgba(148,93,196,0.1);
+}
+
+.stage::after {
+    background: var(--geo);
+}
+
+.special-mechanic, .special-effect {
+    background: rgba(148,93,196,0.05);
+    border-left: 3px solid var(--geo);
+}
+
+.cooldown-progress {
+    background: linear-gradient(90deg, var(--geo) 0%, var(--geo-dark) 100%);
+}
+
+.constellation-icon {
+    border: 2px solid var(--geo);
+}
+
+.constellation-tooltip {
+    border-top: 1px solid var(--geo);
+}
+
+.character-portrait {
+    border: 3px solid var(--geo);
+}
+
+.tag {
+    background: rgba(148,93,196,0.15);
+    border: 1px solid var(--geo);
+}

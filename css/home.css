@@ -1,0 +1,312 @@
+/* 导航栏样式 - 融合原神UI风格 */
+    .genshin-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: var(--nav-height); /* 显式设置高度 */
+      background: linear-gradient(45deg, 
+        rgba(44,62,80,0.9) 0%, 
+        rgba(52,73,94,0.9) 100%);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    /* 内容区域适配 */
+    .swiper-container,
+    .character-grid,
+    .stats-container,
+    .story-section,
+    .news-section,
+    .contact-section {
+      margin-top: var(--nav-height); /* 主要解决方案 */
+      scroll-margin-top: var(--nav-height); /* 锚点跳转补偿 */
+    }
+
+
+    .nav-placeholder {
+      height: var(--nav-height);
+      background: transparent;
+    }
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 2%;
+  list-style: none;
+  position: relative;
+}
+
+.nav-item {
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.nav-link i {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.nav-link:hover {
+  background: rgba(230,180,34,0.15);
+  transform: translateY(-3px);
+}
+
+.nav-link:hover i {
+  transform: scale(1.2);
+  color: var(--accent-gold);
+}
+
+/* 激活状态指示器 */
+.nav-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: var(--accent-gold);
+  transition: all 0.3s ease;
+}
+
+/* 激活状态样式 */
+.nav-item.active .nav-link {
+  color: var(--accent-gold);
+  text-shadow: 0 0 8px rgba(230,180,34,0.4);
+}
+
+.nav-item.active i {
+  color: var(--accent-gold);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .nav-list {
+    padding: 0.5rem;
+    justify-content: space-around;
+  }
+  
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+  
+  .nav-link {
+    padding: 0.8rem 1rem;
+  }
+  
+  .nav-link span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link span {
+    display: none;
+  }
+  
+  .nav-link i {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+    :root {
+      --nav-height: 100px; /* 默认导航栏高度 */
+      --mobile-nav-height: 60px; /* 移动端导航栏高度 */
+      --primary-blue: #2c3e50;
+      --accent-gold: #e6b422;
+      --element-anemo: #74c2a8;
+      --element-pyro: #ff5722;
+      --text-light: #f5f5f5;
+      --background-light: #f8f9fa;
+      --primary-dark: #34495e;
+      --button-hover: #2980b9;
+    }
+
+    /* 增强型轮播图 */
+    .swiper-container {
+      height: 70vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .swiper-slide {
+      position: relative;
+      justify-content: center; /* 水平居中 */
+      text-align: center;
+      /* background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3)); */
+    }
+
+    .swiper-slide img {
+      
+      width: 80%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .slide-caption {
+      position: absolute;
+      bottom: 20%;
+      left: 10%;
+      color: var(--text-light);
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    /* 角色卡片网格 */
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 4rem 8%;
+      background: url('pattern-bg.png') repeat;
+    }
+
+    .character-card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+      overflow: hidden;
+    }
+
+    .character-card:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .character-art {
+      height: 380px;
+      background-position: center top;
+      background-size: cover;
+      position: relative;
+    }
+
+    .character-info {
+      padding: 1.5rem;
+      background: linear-gradient(45deg, var(--primary-blue), #34495e);
+      color: var(--text-light);
+    }
+
+    .element-badge {
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    /* 动态统计模块 */
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      padding: 4rem 5%;
+      background: var(--primary-blue);
+      color: var(--text-light);
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+    }
+
+    /* 游戏背景和剧情部分 */
+    .story-section {
+      padding: 4rem 8%;
+      background: var(--background-light);
+      color: var(--primary-dark);
+    }
+
+    .story-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .story-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* 新闻资讯模块 */
+    .news-section {
+      background: #ffffff;
+      padding: 4rem 8%;
+      color: var(--primary-dark);
+    }
+
+    .news-item {
+      background: rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .news-item:hover {
+      transform: scale(1.02);
+    }
+
+    .news-item h3 {
+      font-size: 1.8rem;
+      color: var(--primary-blue);
+    }
+
+    .news-item p {
+      font-size: 1rem;
+      color: #555;
+      text-align: center;
+    }
+
+    /* 联系我们模块 */
+    .contact-section {
+      background: var(--primary-dark);
+      color: var(--text-light);
+      padding: 4rem 8%;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-section a {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: var(--accent-gold);
+      color: var(--primary-dark);
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+    }
+
+    .contact-section a:hover {
+      background: var(--button-hover);
+    }
+
+    /* 移动端适配 */
+    @media (max-width: 768px) {
+      :root {
+        --nav-height: var(--mobile-nav-height);
+      }
+      .nav-link {
+        padding: 0.8rem 1rem !important;
+      }
+    }
