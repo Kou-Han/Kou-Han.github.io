@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/new.css">
+  <title>原神3.7版本更新专题</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/news.js"></script>
+</head>
+<body>
+  <!-- 在<body>标签起始位置添加导航栏 -->
+<nav class="genshin-nav">
+  <ul class="nav-list">
+    <li class="nav-item active" data-target="#home">
+      <a href="./index.html" class="nav-link">
+        <i class="fas fa-home"></i>
+        <span>主页</span>
+      </a>
+    </li>
+    <li class="nav-item" data-target="#characters">
+      <a href="./news-detail.html" class="nav-link">
+        <i class="fas fa-users"></i>
+        <span>新闻</span>
+      </a>
+    </li>
+    <li class="nav-item" data-target="#weapons">
+      <a href="./characters.html" class="nav-link">
+        <i class="fas fa-sword"></i>
+        <span>角色</span>
+      </a>
+    </li>
+    <li class="nav-item" data-target="#events">
+      <a href="./about.html" class="nav-link">
+        <i class="fas fa-calendar-alt"></i>
+        <span>介绍</span>
+      </a>
+    </li>
+    <li class="nav-item" data-target="#archive">
+      <a href="./register.html" class="nav-link">
+        <i class="fas fa-book-open"></i>
+        <span>登录</span>
+      </a>
+    </li>
+  </ul>
+  
+  <div class="nav-indicator"></div>
+</nav>
+
+  <!-- 新增导航栏占位符 -->
+  <div class="nav-placeholder"></div>
+
+  <div class="container">
+    <h1>原神3.7版本更新专题</h1>
+
+    <!-- 新闻卡片 -->
+    <div class="card-container">
+      
+      <article class="news-card">
+        <div class="card-thumbnail">
+          <img src="./img/决斗！召唤之巅！.jpg" alt="3.7版本更新" />
+          <div class="card-badge">版本更新</div>
+        </div>
+        <div class="card-content">
+          <a href="https://ys.mihoyo.com/main/news/detail/27729">
+            <h3 class="card-title">3.7版本「决斗！召唤之巅！」更新公告：全新角色「琉形蜃境」登场</h3>
+          </a>
+          <div class="card-abstract">
+            本次版本将上线全新五星角色「琉形蜃境」、七圣召唤新规则、多项活动玩法与系统优化，带来前所未有的游戏体验。
+          </div>
+          <div class="card-meta">
+            <span>作者：原神项目组</span>
+            <span>2025-05-08</span>
+            <span>💬 1286</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="card-thumbnail">
+          <img src="./img/「盛夏！海岛大冒险」2.8版本限定活动开启.jpg" alt="夏日庆典" />
+          <div class="card-badge">版本活动</div>
+        </div>
+        <div class="card-content">
+          <a href="https://www.miyoushe.com/ys/article/36789362">
+            <h3 class="card-title">「盛夏！海岛大冒险」2.8版本限定活动开启</h3>
+          </a>
+          <div class="card-abstract">
+            探索全新金苹果群岛地图，完成趣味解谜挑战可获得限定风之翼「碧浪轻帆」、原石及皇冠天赋材料！
+          </div>
+          <div class="card-meta">
+            <span>作者：版本运营组</span>
+            <span>2025-07-15</span>
+            <span>💬 1,245</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="card-thumbnail">
+          <img src="./img/「白术」全面评测助.jpg" alt="角色评测" />
+          <div class="card-badge">角色评测</div>
+        </div>
+        <div class="card-content">
+          <a href="https://www.miyoushe.com/ys/article/38892163">
+            <h3 class="card-title">「白术」全面评测：治疗与护盾兼备的草系辅助</h3>
+          </a>
+          <div class="card-abstract">
+            评析白术技能机制、命座推荐、圣遗物搭配及阵容组合，助你合理培养草系辅助。
+          </div>
+          <div class="card-meta">
+            <span>作者：攻略组</span>
+            <span>2025-05-06</span>
+            <span>💬 1567</span>
+          </div>
+        </div>
+      </article>
+      <!-- 同人创作新闻卡片 -->
+        <article class="news-card">
+            <div class="card-thumbnail">
+                <picture>
+                    <img src="./img/「璃月风华」同人画作大赛获奖作品.jpg" alt="同人作品展示">
+                </picture>
+                <div class="card-badge">同人创作</div>
+            </div>
+            <div class="card-content">
+              <a href="https://m.weibo.cn/search?containerid=231522type%3D1%26t%3D10%26q%3D%23%E5%8E%9F%E7%A5%9E%E5%90%8C%E4%BA%BA%E7%BB%98%23&extparam=%23%E5%8E%9F%E7%A5%9E%E5%90%8C%E4%BA%BA%E7%BB%98%23&luicode=10000011&lfid=231522type%3D1%26t%3D10%26q%3D%23%E9%9B%B7%E7%94%B5%E5%B0%86%E5%86%9B%23&featurecode=newtitle%0A%E5%B0%91%E5%B9%B4%E5%A4%B1%E8%B8%AA11%E5%B9%B4%E8%A2%AB%E8%A7%A3%E6%95%91">
+                <h3 class="card-title">「璃月风华」同人画作大赛获奖作品展：水墨风格角色设计惊艳全场</h3>
+              </a>
+                <div class="card-abstract">
+                    本次大赛收到全球玩家投稿3200余件，金奖作品《岩王闲游[](@replace=10001)》将璃月建筑与传统水墨技法完美结合...
+                    <span class="expand-btn">展开全文 ▶</span>
+                </div>
+                <div class="card-meta">
+                    <span>作者：艺术共创组</span>
+                    <span>2025-05-07</span>
+                    <span>💬 2345</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- 官方公告新闻卡片 -->
+        <article class="news-card">
+            <div class="card-thumbnail">
+                <picture>
+                    <img src="./img/3.8版本.jpg" alt="版本更新公告">
+                </picture>
+                <div class="card-badge">官方公告</div>
+            </div>
+            <div class="card-content">
+              <a href="https://www.ithome.com/0/703/340.htm">
+                <h3 class="card-title">《[原神]》3.8版本预下载功能上线公告及存储空间优化说明</h3>
+              </a>
+                <div class="card-abstract">
+                    移动端新增资源预下载功能，PC端安装包体积减少15%，详细说明设备存储空间管理方案...
+                    <span class="expand-btn">展开全文 ▶</span>
+                </div>
+                <div class="card-meta">
+                    <span>作者：技术运维组</span>
+                    <span>2025-05-06</span>
+                    <span>💬 1890</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- 角色攻略新闻卡片 -->
+        <article class="news-card">
+            <div class="card-thumbnail">
+                <picture>
+                    <img src="./img/「夜兰」深渊实战手册：双水共鸣配队与绝缘四件套实战数据分析.jpg" alt="角色攻略">
+                </picture>
+                <div class="card-badge">角色评测</div>
+            </div>
+            <div class="card-content">
+              <a href="https://www.miyoushe.com/ys/article/42418373">
+                <h3 class="card-title">「夜兰」深渊实战手册：双水共鸣配队与绝缘四件套实战数据分析</h3>
+              </a>
+                <div class="card-abstract">
+                    详细解析夜兰的E技能充能循环机制，若水/终末弓的伤害对比测试，双水共鸣队输出提升率测算...
+                    <span class="expand-btn">展开全文 ▶</span>
+                </div>
+                <div class="card-meta">
+                    <span>作者：攻略研究院</span>
+                    <span>2025-05-05</span>
+                    <span>💬 3021</span>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- 数据可视化 -->
+    <div class="data-section">
+      <h2>3.7版本流水统计</h2>
+      <canvas id="revenueChart"></canvas>
+      <script>
+        const ctx = document.getElementById("revenueChart").getContext("2d");
+        new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: ["首日", "次日", "第三日", "第四日", "第五日"],
+            datasets: [{
+              label: "流水金额（万元）",
+              data: [3200, 2850, 2760, 2980, 3120],
+              backgroundColor: [
+                "rgba(230,180,34,0.8)",
+                "rgba(74,144,226,0.8)",
+                "rgba(230,180,34,0.8)",
+                "rgba(74,144,226,0.8)",
+                "rgba(230,180,34,0.8)"
+              ],
+              borderRadius: 6
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { position: "top" },
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: {
+                  callback: value => value + " 万"
+                }
+              }
+            }
+          }
+        });
+      </script>
+    </div>
+
+    <!-- 相关推荐 -->
+    <section class="related-cards">
+      <article class="news-card">
+        <div class="card-thumbnail">
+          <img src="./img/3.6版本「草之国度」更新内容回顾.avif" alt="3.6版本回顾">
+          <div class="card-badge">版本回顾 <span class="match-percent">92%</span></div>
+        </div>
+        <div class="card-content">
+          <a href="https://www.gamersky.com/handbook/202304/1585452.shtml">
+            <h3 class="card-title">3.6版本「草之国度」更新内容回顾</h3>
+          </a>
+          <div class="card-abstract">
+            新增须弥地图、草神传说任务、圣遗物「深林的记忆」，以及新机制“元素共鸣”优化。
+          </div>
+          <div class="card-meta">
+            <span>2025-04-20</span>
+            <span>💬 2453</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+      <p>© 2025 原神项目组 | Genshin Impact Fan-Made 页面</p>
+    </footer>
+  </div>
+</body>
+</html>

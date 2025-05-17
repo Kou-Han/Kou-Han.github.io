@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>一人千面·夜兰深度图鉴</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/element-water.css">
+    <script src="./js/character-detail.js" defer></script>
+</head>
+<body>
+    <section class="character-detail" data-element="hydro" data-id="10000078">
+        <!-- 角色立绘与资料卡 -->
+        <div class="profile-section">
+            <div class="artwork">
+                <img src="./img/夜兰立绘.jpg" 
+                     alt="夜兰立绘" 
+                     style="object-fit: cover; height: 950px;">
+                <div class="radar-chart">
+                    <div class="radar-grid"></div>
+                    <div class="radar-fill" style="transform: scale(0.85)"></div>
+                </div>
+            </div>
+            
+            <div class="bio-info">
+                <details open>
+                    <summary>背景故事</summary>
+                    <article>
+                        <h4>第一章·幽客巡游</h4>
+                        <p>岩上茶室的神秘主人，总务司名录中的「不存在之人」。泛蓝的黑色短发搭配紫色眼妆，身着蓝白连体皮衣，佩戴家族祖传的幽奇腕阑玉镯[2,3](@ref)。</p>
+                        <h4>第二章·骰子游戏</h4>
+                        <p>擅长用骰子掌控局势，每次掷骰都暗藏情报密码。岩上茶室的常胜将军，以不同身份游走七国获取机密情报[1,6](@ref)。</p>
+                    </article>
+                </details>
+                
+                <!-- 语音模块 -->
+                <div class="voice-lines" id="voiceContainer">
+                    
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>初次见面</span>
+                        <audio hidden>
+                            <source src="./audio/夜兰-初次见面.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>下雨的时们</span>
+                        <audio hidden>
+                            <source src="./audio/夜兰-下雨的时候.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·翘班</span>
+                        <audio hidden>
+                            <source src="./audio/夜兰-闲聊·翘班.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·身份</span>
+                        <audio hidden>
+                            <source src="./audio/夜兰-闲聊·身份.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·线报</span>
+                        <audio hidden>
+                            <source src="./audio/夜兰-闲聊·线报.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>阳光很好</span>
+                        <audio hidden>
+                            <source src="./audio/夜兰-阳光很好.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技能解析 -->
+        <div class="skill-analysis">
+            <!-- 普通攻击 -->
+            <div class="normal-attack">
+                <h3>普通攻击·潜形隐曜弓</h3>
+                <div class="combo-stages">
+                    <div class="stage">一段伤害：48.7%</div>
+                    <div class="stage">二段伤害：49.2%</div>
+                    <div class="stage">三段伤害：62.1%</div>
+                    <div class="stage">二段伤害：79.2%</div>
+                    <div class="stage">三段伤害：82.1%</div>
+                </div>
+                <div class="stamina-bar">
+                    <span>重击消耗体力：20</span>
+                    <div class="cooldown-timer">
+                        <div class="cooldown-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 元素战技与爆发 -->
+            <div class="skill-row">
+                <div class="elemental-skill">
+                    <h3>元素战技·萦络纵命索</h3>
+                    <div class="skill-mechanic">
+                        <div class="damage-formula">
+                            基础伤害：431%<br>
+                            冷却时间：10秒
+                        </div>
+                        <div class="special-mechanic">
+                            <h4>络命丝爆发</h4>
+                            <p>疾走标记敌人后造成范围水伤，每标记1名敌人增加34%破局矢概率[6,10](@ref)。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="elemental-burst">
+                    <h3>元素爆发·渊图玲珑骰</h3>
+                    <div class="burst-mechanic">
+                        <div class="damage-info">
+                            总倍率：4143%<br>
+                            持续时间：15秒
+                        </div>
+                        <div class="cooldown-indicator">
+                            冷却时间：18秒<br>
+                            元素能量：70
+                        </div>
+                        <div class="special-effect">
+                            <h4>玄掷玲珑</h4>
+                            <p>协同攻击每秒触发1次，前台角色普攻时额外造成生命值上限的水伤[6,9](@ref)。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 命之座系统 -->
+        <div class="constellation-system">
+            <div class="constellation-grid">
+                <div class="constellation-icon" data-c="1">
+                    <img src="./small-img/夜兰-命之座1.png" alt="与谋者">
+                    <div class="constellation-tooltip">
+                        <h4>与谋者，以局入局</h4>
+                        <p>元素战技使用次数+1，充能效率提升60%[6,7](@ref)</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="2">
+                    <img src="./small-img/夜兰-命之座2.png" alt="入彀者">
+                    <div class="constellation-tooltip">
+                        <h4>入彀者，多多益善</h4>
+                        <p>元素爆发协同攻击额外发射水箭，独立挂水增强蒸发反应[7](@ref)</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="3">
+                    <img src="./small-img/夜兰-命之座3.png" alt="坐庄者">
+                    <div class="constellation-tooltip">
+                        <h4>坐庄者，三仙戏法</h4>
+                        <p>元素战技等级+3，提升至15级上限[7](@ref)</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="4">
+                    <img src="./small-img/夜兰-命之座4.png" alt="惑者">
+                    <div class="constellation-tooltip">
+                        <h4>惑者，接树移花</h4>
+                        <p>战技命中敌人提升全队生命上限，每标记1敌+10%[6,7](@ref)</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="5">
+                    <img src="./small-img/夜兰-命之座5.png" alt="凶将">
+                    <div class="constellation-tooltip">
+                        <h4>凶将，琼畟药骰</h4>
+                        <p>元素爆发等级+3，提升至15级上限[7](@ref)</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="6">
+                    <img src="./small-img/夜兰-命之座6.png" alt="取胜者">
+                    <div class="constellation-tooltip">
+                        <h4>取胜者，大小通吃</h4>
+                        <p>释放元素爆发后，6次普攻转化为130%倍率破局矢[6,7](@ref)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推荐配队 -->
+        <div class="team-recommendation">
+            <div class="team-composition">
+                <div class="team-member">
+                    <img src="./small-img/夜兰头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag subdps">副C</span>
+                        <span class="tag hydro">水</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/胡桃头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag dps">主C</span>
+                        <span class="tag pyro">火</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/万叶头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag support">减抗</span>
+                        <span class="tag anemo">风</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/钟离头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag shield">护盾</span>
+                        <span class="tag geo">岩</span>
+                    </div>
+                </div>
+            </div>
+            <div class="team-logic">
+                <h4>蒸发体系解析</h4>
+                <ul>
+                    <li>夜兰高频挂水配合胡桃重击触发2.0倍蒸发</li>
+                    <li>万叶风套减抗+元素增伤</li>
+                    <li>钟离提供霸体与生存保障[11,12](@ref)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

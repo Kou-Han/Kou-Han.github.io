@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>岩王帝君·钟离深度图鉴</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/element-geo.css">
+
+    <script src="./js/character-detail.js"></script>
+</head>
+<body>
+    <!-- 岩王帝君钟离完整实现 -->
+    <section class="character-detail" data-element="geo" data-id="10000030">
+        <div class="profile-section">
+            <div class="artwork">
+                <img src="./img/钟离立绘.jpg" 
+                     alt="钟离立绘" 
+                     style="object-fit: cover; height: 900px;">
+                <div class="radar-chart">
+                    <div class="radar-grid"></div>
+                    <div class="radar-fill" style="transform: scale(0.85)"></div>
+                </div>
+            </div>
+            
+            <div class="bio-info">
+                <details open>
+                    <summary>背景故事</summary>
+                    <article>
+                        <h4>第一章·岩王契约</h4>
+                        <p>璃月港的建立者，七神中最古老的存在...</p>
+                        <h4>第二章·尘世闲游</h4>
+                        <p>卸下神职后以凡人身份游历璃月...</p>
+                        <p>应「往生堂」邀请而来的神秘客卿。样貌俊美，举止高雅，拥有远超常人的学识。</p>
+                    </article>
+                </details>
+                
+                <div class="voice-lines" id="voiceContainer">
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>初次见面</span>
+                        <audio hidden>
+                            <source src="./audio/钟离-一份新的契约.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·旅程</span>
+                        <audio hidden>
+                            <source src="./audio/钟离-闲聊·旅程.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>感兴趣的见闻</span>
+                        <audio hidden>
+                            <source src="./audio/钟离-你若去往绝云间.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>想要了解钟离</span>
+                        <audio hidden>
+                            <source src="./audio/钟离-怎么，难得闲暇.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>关于我们·黄金</span>
+                        <audio hidden>
+                            <source src="./audio/钟离-关于我们·黄金.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>晚上好</span>
+                        <audio hidden>
+                            <source src="./audio/钟离-晚上好.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技能解析 -->
+        <div class="skill-analysis">
+            <div class="normal-attack">
+                <h3>普通攻击·岩雨</h3>
+                <div class="combo-stages">
+                    <div class="stage">一段伤害：49.7%</div>
+                    <div class="stage">二段伤害：51.5%</div>
+                    <div class="stage">三段伤害：63.9%</div>
+                    <div class="stage">四段伤害：70.3%</div>
+                    <div class="stage">五段伤害：89.2%</div>
+                </div>
+                <div class="stamina-bar">
+                    <span>重击消耗体力：25</span>
+                    <div class="cooldown-timer">
+                        <div class="cooldown-progress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="elemental-skill">
+                    <h3>元素战技·地心</h3>
+                    <div class="skill-mechanic">
+                        <div class="damage-formula">
+                            岩脊伤害 = 基础伤害 × (1 + 生命值加成0.3%)
+                        </div>
+                        <div class="cooldown-indicator">
+                            冷却时间：12秒
+                            <div class="cooldown-timer">
+                                <div class="cooldown-progress"></div>
+                            </div>
+                        </div>
+                        <div class="special-mechanic">
+                            <h4>长按效果</h4>
+                            <p>形成玉璋护盾，伤害吸收量基于钟离生命值...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="elemental-burst">
+                    <h3>元素爆发·天星</h3>
+                    <div class="burst-mechanic">
+                        <div class="damage-info">
+                            基础伤害：899%<br>
+                            石化持续时间：4秒
+                        </div>
+                        <div class="cooldown-indicator">
+                            冷却时间：12秒<br>
+                            元素能量：40
+                            <div class="cooldown-timer">
+                                <div class="cooldown-progress"></div>
+                            </div>
+                        </div>
+                        <div class="special-effect">
+                            <h4>石化效果</h4>
+                            <p>使敌人进入石化状态，无法行动</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 命之座系统 -->
+        <div class="constellation-system">
+            <div class="constellation-grid">
+                <div class="constellation-icon" data-c="1">
+                    <img src="./small-img/钟离-命之座1.png" alt="岩雨">
+                    <div class="constellation-tooltip">
+                        <h4>岩者，六合引之为骨</h4>
+                        <p>地心创造的岩脊至多可以同时存在2个。</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="2">
+                    <img src="./small-img/钟离-命之座2.png" alt="石者">
+                    <div class="constellation-tooltip">
+                        <h4>石者，八荒韫玉而明</h4>
+                        <p>天星陨落时，会为附近的当前场上角色赋予玉璋护盾。</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="3">
+                    <img src="./small-img/钟离-命之座3.png" alt="圭璋">
+                    <div class="constellation-tooltip">
+                        <h4>圭璋，瞑仍不移其晖</h4>
+                        <p>地心的技能等级提高3级。至多提升至15级。</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="4">
+                    <img src="./small-img/钟离-命之座4.png" alt="黄琮">
+                    <div class="constellation-tooltip">
+                        <h4>黄琮，破而不夺其坚</h4>
+                        <p>天星的影响范围扩大20%。此外，天星的石化效果持续时间延长2秒。</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="5">
+                    <img src="./small-img/钟离-命之座5.png" alt="苍璧">
+                    <div class="constellation-tooltip">
+                        <h4>苍璧，驱之长昭天理</h4>
+                        <p>天星的技能等级提高3级。至多提升至15级。</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="6">
+                    <img src="./small-img/钟离-命之座6.png" alt="金玉">
+                    <div class="constellation-tooltip">
+                        <h4>金玉，礼予天地四方</h4>
+                        <p>玉璋护盾受到伤害时，将为当前角色恢复生命值，回复量为伤害的40%。单次回复量不超过当前角色最大生命值的8%。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推荐配队 -->
+        <div class="team-recommendation">
+            <div class="team-composition">
+                <div class="team-member">
+                    <img src="./small-img/钟离头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag shield">护盾</span>
+                        <span class="tag support">岩</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/胡桃头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag dps">主C</span>
+                        <span class="tag pyro">火</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/行秋头像.jpeg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag subdps">副C</span>
+                        <span class="tag hydro">水</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/夜兰头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag subdps">副C</span>
+                        <span class="tag geo">水</span>
+                    </div>
+                </div>
+            </div>
+            <div class="team-logic">
+                <h4>配队逻辑说明</h4>
+                <ul>
+                    <li>双岩共鸣提升护盾强效和伤害</li>
+                    <li>蒸发反应：火(胡桃)+水(行秋) 2.0倍率</li>
+                    <li>夜兰协同输出+充能循环</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>无想刃峡间·雷电将军深度图鉴</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/element-electro.css">
+    <script src="./js/character-detail.js"></script>
+</head>
+<body>
+    <section class="character-detail" data-element="electro" data-id="10000026">
+        <!-- 角色立绘与资料卡 -->
+        <div class="profile-section">
+            <div class="artwork">
+                <img src="./img/雷电将军立绘.jpg" 
+                     alt="雷电将军立绘" 
+                     style="object-fit: cover; height: 900px;">
+                <div class="radar-chart">
+                    <div class="radar-grid"></div>
+                    <div class="radar-fill" style="transform: scale(0.85)"></div>
+                </div>
+            </div>
+            
+            <div class="bio-info">
+                <details open>
+                    <summary>背景故事</summary>
+                    <article>
+                        <h4>第一章·永恒牢笼</h4>
+                        <p>稻妻幕府的统治者，此世最殊胜威怖的雷霆化身...</p>
+                        <h4>第二章·一心净土</h4>
+                        <p>制造人偶将军代行政务，真身隐于意识空间...</p>
+                        <p>此身即最为殊胜尊贵之身，应持天下之大权。此身应许臣民一梦，即是千世万代不变不移的「永恒」。</p>
+                    </article>
+                </details>
+                
+                <!-- 语音模块 -->
+                <div class="voice-lines" id="voiceContainer">
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>初次见面</span>
+                        <audio hidden>
+                            <source src="./audio/雷电将军-初次见面.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·浮世</span>
+                        <audio hidden>
+                            <source src="./audio/雷电将军-闲聊·浮世.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·花鸟余情</span>
+                        <audio hidden>
+                            <source src="./audio/雷电将军-闲聊·花鸟余情.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>打雷的时候</span>
+                        <audio hidden>
+                            <source src="./audio/雷电将军-打雷的时候.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>天晴的时候</span>
+                        <audio hidden>
+                            <source src="./audio/雷电将军-天晴的时候.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>晚安</span>
+                        <audio hidden>
+                            <source src="./audio/雷电将军-晚安.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技能解析 -->
+        <div class="skill-analysis">
+            <!-- 普通攻击 -->
+            <div class="normal-attack">
+                <h3>普通攻击·源流</h3>
+                <div class="combo-stages">
+                    <div class="stage">一段伤害：48.7%</div>
+                    <div class="stage">二段伤害：49.2%</div>
+                    <div class="stage">三段伤害：62.1%</div>
+                    <div class="stage">四段伤害：67.3%</div>
+                    <div class="stage">五段伤害：84.5%</div>
+                </div>
+                <div class="stamina-bar">
+                    <span>重击消耗体力：25</span>
+                    <div class="cooldown-timer">
+                        <div class="cooldown-progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 元素战技与爆发 -->
+            <div class="skill-row">
+                <div class="elemental-skill">
+                    <h3>元素战技·恶曜开眼</h3>
+                    <div class="skill-mechanic">
+                        <div class="damage-formula">
+                            协同伤害：87.5%<br>
+                            持续25秒/冷却10秒
+                        </div>
+                        <div class="special-mechanic">
+                            <h4>诸愿百眼轮</h4>
+                            <p>队伍元素爆发伤害提升27%（基于元素能量）[3,5](@ref)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="elemental-burst">
+                    <h3>元素爆发·奥义·梦想真说</h3>
+                    <div class="burst-mechanic">
+                        <div class="damage-info">
+                            基础倍率：721%<br>
+                            最大愿力加成：180%
+                        </div>
+                        <div class="cooldown-indicator">
+                            冷却：18秒<br>
+                            能量：90
+                        </div>
+                        <div class="special-effect">
+                            <h4>梦想一心</h4>
+                            <p>7秒内攻击转为雷伤，全队恢复27.5能量[8,10](@ref)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 命之座系统 -->
+        <div class="constellation-system">
+            <div class="constellation-grid">
+                <div class="constellation-icon" data-c="1">
+                    <img src="./small-img/雷电将军-命之座1.png" alt="恶曜卜词">
+                    <div class="constellation-tooltip">
+                        <h4>恶曜卜词</h4>
+                        <p>愿力积攒效率提升80%（雷元素角色）[5](@ref)</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="2">
+                    <img src="./small-img/雷电将军-命之座2.png" alt="斩铁断金">
+                    <div class="constellation-tooltip">
+                        <h4>斩铁断金</h4>
+                        <p>大招期间无视敌人60%防御[5,10](@ref)</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="3">
+                    <img src="./small-img/雷电将军-命之座3.png" alt="真影旧事">
+                    <div class="constellation-tooltip">
+                        <h4>真影旧事</h4>
+                        <p>元素爆发等级+3（上限15级）</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="4">
+                    <img src="./small-img/雷电将军-命之座4.png" alt="誓奉常道">
+                    <div class="constellation-tooltip">
+                        <h4>誓奉常道</h4>
+                        <p>大招后全队攻击力+30%[10](@ref)</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="5">
+                    <img src="./small-img/雷电将军-命之座5.png" alt="凶将显形">
+                    <div class="constellation-tooltip">
+                        <h4>凶将显形</h4>
+                        <p>元素战技等级+3</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="6">
+                    <img src="./small-img/雷电将军-命之座6.png" alt="负愿前行">
+                    <div class="constellation-tooltip">
+                        <h4>负愿前行</h4>
+                        <p>缩短全队元素爆发冷却时间[5](@ref)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推荐配队 -->
+        <div class="team-recommendation">
+            <div class="team-composition">
+                <div class="team-member">
+                    <img src="./small-img/雷电将军头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag dps">主C</span>
+                        <span class="tag electro">雷</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/九条沙罗头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag support">增伤</span>
+                        <span class="tag electro">雷</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/万叶头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag subdps">减抗</span>
+                        <span class="tag anemo">风</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/班尼特头像.png" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag heal">治疗</span>
+                        <span class="tag pyro">火</span>
+                    </div>
+                </div>
+            </div>
+            <div class="team-logic">
+                <h4>雷九万班体系解析</h4>
+                <ul>
+                    <li>双雷共鸣：元素充能效率提升30%[3](@ref)</li>
+                    <li>九条裟罗提供攻击力+暴伤加成</li>
+                    <li>万叶触发风套减抗+元素增伤</li>
+                    <li>班尼特大招领域提供治疗与攻击力加成</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

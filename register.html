@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/register.css">
+  <script src="./js/register.js"></script>
+  <title>安全注册 - 原神玩家中心</title>
+</head>
+<body>
+  <nav class="genshin-nav">
+    <ul class="nav-list">
+      <li class="nav-item active" data-target="#home">
+        <a href="./index.html" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>主页</span>
+        </a>
+      </li>
+      <li class="nav-item" data-target="#characters">
+        <a href="./news-detail.html" class="nav-link">
+          <i class="fas fa-users"></i>
+          <span>新闻</span>
+        </a>
+      </li>
+      <li class="nav-item" data-target="#weapons">
+        <a href="./characters.html" class="nav-link">
+          <i class="fas fa-sword"></i>
+          <span>角色</span>
+        </a>
+      </li>
+      <li class="nav-item" data-target="#events">
+        <a href="./about.html" class="nav-link">
+          <i class="fas fa-calendar-alt"></i>
+          <span>介绍</span>
+        </a>
+      </li>
+      <li class="nav-item" data-target="#archive">
+        <a href="./register.html" class="nav-link">
+          <i class="fas fa-book-open"></i>
+          <span>登录</span>
+        </a>
+      </li>
+    </ul>
+    
+    <div class="nav-indicator"></div>
+  </nav>
+  <div class="nav-placeholder" style="height: var(--nav-height);"></div>
+  <div class="register-container">
+    <h2>原神玩家中心注册</h2>
+    <form id="registerForm">
+      <!-- 用户名 -->
+      <div class="input-group">
+        <label for="username">用户名</label>
+        <input type="text" id="username" required pattern="[a-zA-Z0-9_]{4,16}" oninput="checkUsernameAvailability(this.value)" />
+        <div class="validation-feedback"><span id="usernameFeedback"></span></div>
+      </div>
+      <!-- 密码 -->
+      <div class="input-group">
+        <label for="password">密码</label>
+        <input type="password" id="password" required oninput="checkPasswordStrength(this.value)" />
+        <div class="strength-meter">
+          <div class="strength-progress" id="strengthBar"></div>
+        </div>
+        <div class="validation-feedback" id="passwordHint"></div>
+      </div>
+      <!-- 邮箱 -->
+      <div class="input-group">
+        <label for="email">邮箱</label>
+        <input type="email" id="email" required oninput="validateEmailFormat(this)" />
+        <div class="validation-feedback" id="emailFeedback"></div>
+      </div>
+      <!-- 生日 -->
+      <div class="input-group">
+        <label for="birthdate">出生日期</label>
+        <input type="date" id="birthdate" required max="2007-05-09" min="1950-01-01" />
+      </div>
+      <!-- 滑动验证 -->
+      <div class="captcha-container">
+        <div class="slider-track">
+          <div class="slider-thumb" id="slider"></div>
+        </div>
+        <span>请拖动滑块完成验证</span>
+      </div>
+      <!-- 隐私条款 -->
+      <div class="terms-container">
+        <label class="terms-checkbox">
+          <input type="checkbox" required />
+          我已阅读并同意《用户隐私协议》
+        </label>
+        <div class="terms-content">
+          <h4>用户隐私协议</h4>
+          <p>1. 我们将严格遵守《个人信息保护法》等相关法律法规。</p>
+          <p>2. 您的信息仅用于账号登录及安全验证，不会用于其他商业用途。</p>
+          <p>3. 若您未满18岁，请征得监护人同意后再注册。</p>
+        </div>
+      </div>
+      <!-- 安全信息 -->
+      <div class="security-info">
+        <h4>安全中心</h4>
+        <ul>
+          <li><a href="#pwdReset">密码修改</a></li>
+          <li><a href="#accountLock">账号冻结</a></li>
+          <li>最近登录：192.168.1.1 (2025-05-08)</li>
+        </ul>
+        <details>
+          <summary>家长监护模式</summary>
+          <p>未成年人每日游戏时间不超过3小时，禁止深夜登录。</p>
+        </details>
+      </div>
+      <button type="submit">注册账号</button>
+      <a href="./index.html">登录账号</a>
+    </form>
+  </div>
+</body>
+</html>

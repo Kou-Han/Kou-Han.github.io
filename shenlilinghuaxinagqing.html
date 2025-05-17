@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>白鹭公主·神里绫华深度图鉴</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/element-ice.css">
+    <script src="./js/character-detail.js" defer></script>
+</head>
+<body>
+    <section class="character-detail" data-element="cryo" data-id="10000002">
+        <!-- 角色立绘与资料卡 -->
+        <div class="profile-section">
+            <div class="artwork">
+                <img src="./img/神里绫华立绘.jpg" 
+                     alt="神里绫华立绘" 
+                     style="object-fit: cover; height: 900px;">
+                <div class="radar-chart">
+                    <div class="radar-grid"></div>
+                    <div class="radar-fill" style="transform: scale(0.85)"></div>
+                </div>
+            </div>
+            
+            <div class="bio-info">
+                <details open>
+                    <summary>背景故事</summary>
+                    <article>
+                        <h4>第一章·白鹭之章</h4>
+                        <p>稻妻「社奉行」神里家的大小姐，举止优雅的「白鹭公主」。雪白发丝梳成振袖样式的高马尾，发冠融合武士兜鍪元素[6](@ref)。</p>
+                        <h4>第二章·椿花之舞</h4>
+                        <p>自幼习得贵族礼仪与剑术，表面完美无瑕却向往普通少女生活。深夜会偷做茶泡饭，用茶叶占卜恋爱运势[2,6](@ref)。</p>
+                    </article>
+                </details>
+                
+                <!-- 语音模块 -->
+                <div class="voice-lines" id="voiceContainer">
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>初次见面</span>
+                        <audio hidden>
+                            <source src="./audio/凌华-初次见面.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>下雪的时候</span>
+                        <audio hidden>
+                            <source src="./audio/凌华-下雪的时候.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·安定</span>
+                        <audio hidden>
+                            <source src="./audio/凌华-闲聊·安定.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·出神</span>
+                        <audio hidden>
+                            <source src="./audio/凌华-闲聊·出神.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="voice-item">
+                        <button class="play-btn"></button>
+                        <span>闲聊·名刀</span>
+                        <audio hidden>
+                            <source src="./audio/凌华-闲聊·名刀.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技能解析 -->
+        <div class="skill-analysis">
+            <!-- 普通攻击 -->
+            <div class="normal-attack">
+                <h3>普通攻击·神里流·倾</h3>
+                <div class="combo-stages">
+                    <div class="stage">一段伤害：45.7%</div>
+                    <div class="stage">二段伤害：47.9%</div>
+                    <div class="stage">三段伤害：60.2%</div>
+                    <div class="stage">四段伤害：65.4%</div>
+                    <div class="stage">五段伤害：79.1%</div>
+                </div>
+                <div class="stamina-bar">
+                    <span>重击消耗体力：20</span>
+                    <div class="cooldown-timer">
+                        <div class="cooldown-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 元素战技与爆发 -->
+            <div class="skill-row">
+                <div class="elemental-skill">
+                    <h3>元素战技·神里流·冰华</h3>
+                    <div class="skill-mechanic">
+                        <div class="damage-formula">
+                            基础伤害：431%<br>
+                            冷却时间：10秒
+                        </div>
+                        <div class="special-mechanic">
+                            <h4>霜见雪关扉</h4>
+                            <p>生成5枚追踪敌人的霜见雪关扉，每枚造成83%攻击力的冰元素伤害[6](@ref)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="elemental-burst">
+                    <h3>元素爆发·神里流·霜灭</h3>
+                    <div class="burst-mechanic">
+                        <div class="damage-info">
+                            总倍率：4143%<br>
+                            持续时间：5秒
+                        </div>
+                        <div class="cooldown-indicator">
+                            冷却时间：20秒<br>
+                            元素能量：80
+                        </div>
+                        <div class="special-effect">
+                            <h4>冰风加护</h4>
+                            <p>领域内角色获得15%冰元素伤害加成，持续10秒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 命之座系统 -->
+        <div class="constellation-system">
+            <div class="constellation-grid">
+                <div class="constellation-icon" data-c="1">
+                    <img src="./small-img/神里凌华-命之座1.png" alt="霜杀墨染樱">
+                    <div class="constellation-tooltip">
+                        <h4>霜杀墨染樱</h4>
+                        <p>普通攻击与重击暴击率提升30%</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="2">
+                    <img src="./small-img/神里凌华-命之座2.png" alt="三重雪关扉">
+                    <div class="constellation-tooltip">
+                        <h4>三重雪关扉</h4>
+                        <p>元素爆发伤害提升20%，持续时间延长3秒</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="3">
+                    <img src="./small-img/神里凌华-命之座3.png" alt="花霰白鹭洲">
+                    <div class="constellation-tooltip">
+                        <h4>花霰白鹭洲</h4>
+                        <p>元素战技等级+3，冰元素伤害加成提升15%</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="4">
+                    <img src="./small-img/神里凌华-命之座4.png" alt="寒稽古流仪">
+                    <div class="constellation-tooltip">
+                        <h4>寒稽古流仪</h4>
+                        <p>处于护盾庇护下时，伤害提升30%</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="5">
+                    <img src="./small-img/神里凌华-命之座5.png" alt="千早振袖舞">
+                    <div class="constellation-tooltip">
+                        <h4>千早振袖舞</h4>
+                        <p>元素爆发等级+3，攻击速度提升12%</p>
+                    </div>
+                </div>
+                <div class="constellation-icon" data-c="6">
+                    <img src="./small-img/神里凌华-命之座6.png" alt="白鹭御神流">
+                    <div class="constellation-tooltip">
+                        <h4>白鹭御神流</h4>
+                        <p>重击时召唤持续6秒的冰刃风暴，每秒造成120%攻击力伤害</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推荐配队 -->
+        <div class="team-recommendation">
+            <div class="team-composition">
+                <div class="team-member">
+                    <img src="./small-img/神里绫华头像.png" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag dps">主C</span>
+                        <span class="tag cryo">冰</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/申鹤头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag support">增伤</span>
+                        <span class="tag cryo">冰</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/万叶头像.jpg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag subdps">减抗</span>
+                        <span class="tag anemo">风</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="./small-img/心海头像.jpeg" class="character-portrait">
+                    <div class="role-tags">
+                        <span class="tag heal">治疗</span>
+                        <span class="tag hydro">水</span>
+                    </div>
+                </div>
+            </div>
+            <div class="team-logic">
+                <h4>永冻体系解析</h4>
+                <ul>
+                    <li>双冰共鸣：对冻结目标暴击率提升15%</li>
+                    <li>申鹤提供「冰翎」增伤，元素战技提升30%冰伤</li>
+                    <li>枫原万叶触发翠绿4件套减抗，扩散增伤35%</li>
+                    <li>珊瑚宫心海持续挂水+治疗，保证永冻循环</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

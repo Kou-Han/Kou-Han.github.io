@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/characters.css">
+    <title>提瓦特全角色图鉴 - 原神主题站</title>
+</head>
+<body>
+    <!-- 在<body>标签起始位置添加导航栏 -->
+<nav class="genshin-nav">
+    <ul class="nav-list">
+      <li class="nav-item active" data-target="#home">
+        <a href="./index.html" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>主页</span>
+        </a>
+      </li>
+      <li class="nav-item" data-target="#characters">
+        <a href="./news-detail.html" class="nav-link">
+          <i class="fas fa-users"></i>
+          <span>新闻</span>
+        </a>
+      </li>
+      <li class="nav-item" data-target="#weapons">
+        <a href="./characters.html" class="nav-link">
+          <i class="fas fa-sword"></i>
+          <span>角色</span>
+        </a>
+      </li>
+      <li class="nav-item" data-target="#events">
+        <a href="./about.html" class="nav-link">
+          <i class="fas fa-calendar-alt"></i>
+          <span>介绍</span>
+        </a>
+      </li>
+      <li class="nav-item" data-target="#archive">
+        <a href="./register.html" class="nav-link">
+          <i class="fas fa-book-open"></i>
+          <span>登录</span>
+        </a>
+      </li>
+    </ul>
+    
+    <div class="nav-indicator"></div>
+  </nav>
+  <!-- 新增导航栏占位符 -->
+  <div class="nav-placeholder"></div>
+    <header>
+        <h1>提瓦特全角色图鉴</h1>
+        <nav class="element-filter">
+            <button class="element-btn active" data-element="all">ALL</button>
+            <button class="element-btn" style="background:var(--anemo); background: url('./img/风.jpg') no-repeat center/cover;" data-element="anemo"></button>
+            <button class="element-btn" style="background:var(--geo) ; background: url('./img/岩.jpg') no-repeat center/cover;" data-element="geo"></button>
+            <button class="element-btn" style="background:var(--electro); background: url('./img/雷.jpg') no-repeat center/cover;" data-element="electro"></button>
+            <button class="element-btn" style="background:var(--dendro); background: url('./img/草.jpg') no-repeat center/cover;" data-element="dendro"></button>
+            <button class="element-btn" style="background:var(--hydro); background: url('./img/水.jpg') no-repeat center/cover;" data-element="hydro"></button>
+            <button class="element-btn" style="background:var(--pyro); background: url('./img/火.jpg') no-repeat center/cover;" data-element="pyro"></button>
+            <button class="element-btn" style="background:var(--cryo); background: url('./img/冰.jpg') no-repeat center/cover;" data-element="cryo"></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="character-grid">
+            <a href="./zhonglixiangqing.html">
+                <article class="character-card" data-element="geo" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/钟离.png')">
+                        <div class="element-badge">
+                            <img src="./img/岩.jpg" alt="岩元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">尘世闲游·钟离</h3>
+                        <div class="tags">
+                            <span class="tag">#护盾之王</span>
+                            <span class="tag">#石化控制</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#e6b422;--rarity-end:#b8931a"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+                <!-- 风元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="anemo" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/温迪.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/风.jpg" alt="风元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">风色诗人·温迪</h3>
+                        <div class="tags">
+                            <span class="tag">#聚怪核心</span>
+                            <span class="tag">#元素爆发</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#74c2a8;--rarity-end:#4a9680"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 雷元素角色 -->
+            <a href="./leidianjiangjunxiangqing.html">
+                <article class="character-card" data-element="electro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/雷电将军.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/雷.jpg" alt="雷元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">一心净土·雷电将军</h3>
+                        <div class="tags">
+                            <span class="tag">#元素爆发</span>
+                            <span class="tag">#充能核心</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#c17dff;--rarity-end:#8a4dff"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="character-card" data-element="electro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/八重神子.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/雷.jpg" alt="雷元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">浮世笑百姿·八重神子</h3>
+                        <div class="tags">
+                            <span class="tag">#后台挂雷</span>
+                            <span class="tag">#元素精通</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#c17dff;--rarity-end:#8a4dff"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 草元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="dendro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/纳西妲.jpeg')">
+                        <div class="element-badge">
+                            <img src="./img/草.jpg" alt="草元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">白草净华·纳西妲</h3>
+                        <div class="tags">
+                            <span class="tag">#草核专家</span>
+                            <span class="tag">#精通增益</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#a5d64b;--rarity-end:#7aa832"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 火元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="anemo" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/魈.png')">
+                        <div class="element-badge">
+                            <img src="./img/风.jpg" alt="火元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">护法夜叉·魈</h3>
+                        <div class="tags">
+                            <span class="tag">#高空输出</span>
+                            <span class="tag">#爆发伤害</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#ff5722;--rarity-end:#cc461b"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 水元素角色 -->
+            <a href="./yelanxiangqing.html">
+                <article class="character-card" data-element="hydro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/夜兰.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/水.jpg" alt="水元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">兰生幽谷·夜兰</h3>
+                        <div class="tags">
+                            <span class="tag">#高频挂水</span>
+                            <span class="tag">#增伤辅助</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#4ab3ff;--rarity-end:#2a8fcc"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 冰元素角色 -->
+            <a href="./shenlilinghuaxinagqing.html">
+                <article class="character-card" data-element="cryo" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/神里凌华.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/冰.jpg" alt="冰元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">白鹭霜华·神里绫华</h3>
+                        <div class="tags">
+                            <span class="tag">#冰伤核心</span>
+                            <span class="tag">#高频爆发</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#90e0ef;--rarity-end:#5cb0d0"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 岩元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="geo" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/荒泷一斗.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/岩.jpg" alt="岩元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">花坂豪快·荒泷一斗</h3>
+                        <div class="tags">
+                            <span class="tag">#防御转化</span>
+                            <span class="tag">#岩伤爆发</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#e6b422;--rarity-end:#b8931a"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 风元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="anemo" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/枫原万叶.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/风.jpg" alt="风元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">红叶逐荒波·枫原万叶</h3>
+                        <div class="tags">
+                            <span class="tag">#聚怪增伤</span>
+                            <span class="tag">#元素精通</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#74c2a8;--rarity-end:#4a9680"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <!-- 冰元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="cryo" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/优菈.png')">
+                        <div class="element-badge">
+                            <img src="./img/冰.jpg" alt="冰元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">浪沫的旋舞·优菈</h3>
+                        <div class="tags">
+                            <span class="tag">#物理爆发</span>
+                            <span class="tag">#光降之剑</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#90e0ef;--rarity-end:#5cb0d0"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 火元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="pyro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/胡桃.png')">
+                        <div class="element-badge">
+                            <img src="./img/火.jpg" alt="火元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">雪霁梅香·胡桃</h3>
+                        <div class="tags">
+                            <span class="tag">#生命转化</span>
+                            <span class="tag">#彼岸蝶舞</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#ff5722;--rarity-end:#cc461b"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 冰元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="cryo" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/甘雨.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/冰.jpg" alt="冰元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">循循守月·甘雨</h3>
+                        <div class="tags">
+                            <span class="tag">#霜华矢</span>
+                            <span class="tag">#冰莲领域</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#90e0ef;--rarity-end:#5cb0d0"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 雷元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="electro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/刻晴.png')">
+                        <div class="element-badge">
+                            <img src="./img/雷.jpg" alt="雷元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">霆霓快雨·刻晴</h3>
+                        <div class="tags">
+                            <span class="tag">#瞬移斩击</span>
+                            <span class="tag">#星斗归位</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#c17dff;--rarity-end:#8a4dff"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 水元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="hydro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/心海.png')">
+                        <div class="element-badge">
+                            <img src="./img/水.jpg" alt="水元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">真珠之智·珊瑚宫心海</h3>
+                        <div class="tags">
+                            <span class="tag">#治疗核心</span>
+                            <span class="tag">#化海月</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#4ab3ff;--rarity-end:#2a8fcc"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 火元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="pyro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/宵宫.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/火.jpg" alt="火元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">琉金火光·宵宫</h3>
+                        <div class="tags">
+                            <span class="tag">#速射烟花</span>
+                            <span class="tag">#自动追踪</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#ff5722;--rarity-end:#cc461b"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 水元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="hydro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/妮露.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/水.jpg" alt="水元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">莲光落舞筵·妮露</h3>
+                        <div class="tags">
+                            <span class="tag">#水环领域</span>
+                            <span class="tag">#丰穰之核</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#4ab3ff;--rarity-end:#2a8fcc"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 火元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="pyro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/迪希雅.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/火.jpg" alt="火元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">炽鬃之狮·迪希雅</h3>
+                        <div class="tags">
+                            <span class="tag">#伤害分摊</span>
+                            <span class="tag">#净焰剑狱</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#ff5722;--rarity-end:#cc461b"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 水元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="hydro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/芙宁娜.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/水.jpg" alt="水元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">众水之颂·芙宁娜</h3>
+                        <div class="tags">
+                            <span class="tag">#形态切换</span>
+                            <span class="tag">#荒芒机制</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#4ab3ff;--rarity-end:#2a8fcc"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 雷元素角色 -->
+            <a href="#">
+                <article class="character-card" data-element="electro" data-rarity="5">
+                    <div class="character-art" style="background-image:url('./img/克洛琳德.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/雷.jpg" alt="雷元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">剑铳协奏·克洛琳德</h3>
+                        <div class="tags">
+                            <span class="tag">#双武器切换</span>
+                            <span class="tag">#超载特化</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#c17dff;--rarity-end:#8a4dff"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- 四星角色示例 -->
+            <a href="#">
+                <article class="character-card" data-element="hydro" data-rarity="4">
+                    <div class="character-art" style="background-image:url('./img/行秋.png')">
+                        <div class="element-badge">
+                            <img src="./img/水.jpg" alt="水元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">少年春衫薄·行秋</h3>
+                        <div class="tags">
+                            <span class="tag">#挂水核心</span>
+                            <span class="tag">#减伤抗打断</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#9c4dff;--rarity-end:#6b2dcc"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="character-card" data-element="pyro" data-rarity="4">
+                    <div class="character-art" style="background-image:url('./img/香菱.jpg')">
+                        <div class="element-badge">
+                            <img src="./img/火.jpg" alt="火元素">
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">万民百味·香菱</h3>
+                        <div class="tags">
+                            <span class="tag">#脱手挂火</span>
+                            <span class="tag">#锅巴喷射</span>
+                        </div>
+                        <div class="rarity-bar">
+                            <div class="rarity-fill" style="--rarity-start:#9c4dff;--rarity-end:#6b2dcc"></div>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        </section>
+    </main>
+
+    <footer class="toolbar">
+        <div class="counter">当前展示 48/48 名角色</div>
+        <div class="sort-options">
+            <button class="sort-btn">星级</button>
+            <button class="sort-btn">上线时间</button>
+            <button class="sort-btn">元素属性</button>
+        </div>
+        <button class="back-top">↑</button>
+    </footer>
+
+    <!-- 脚本 -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/character.js"></script>
+</body>
+</html>
