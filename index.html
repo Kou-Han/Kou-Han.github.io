@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="《原神》官方主题站 - 探索提瓦特大陆，获取最新角色情报与游戏资讯">
+  <title>原神主题站 - 开放世界冒险RPG</title>
+  <!-- 外部样式表 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="genshin-nav">
+    <ul class="nav-list">
+      <li class="nav-item active">
+        <a href="./index.html" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>主页</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="./news-detail.html" class="nav-link">
+          <i class="fas fa-users"></i>
+          <span>新闻</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="./characters.html" class="nav-link">
+          <i class="fas fa-sword"></i>
+          <span>角色</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="./about.html" class="nav-link">
+          <i class="fas fa-calendar-alt"></i>
+          <span>介绍</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="./register.html" class="nav-link">
+          <i class="fas fa-book-open"></i>
+          <span>登录</span>
+        </a>
+      </li>
+    </ul>
+    <div class="nav-indicator"></div>
+  </nav>
+  <div class="nav-placeholder"></div>
+  <!-- 轮播图 -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/风与牧歌之城.webp" alt="蒙德城全景" loading="lazy">
+        <div class="slide-caption">
+          <h2>风与牧歌之城</h2>
+          <p>自由之都蒙德欢迎每一位旅行者</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/岩与契约之港.png" alt="璃月港夜景" loading="lazy">
+        <div class="slide-caption">
+          <h2>岩与契约之港</h2>
+          <p>商贸繁荣的千年古都璃月</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/雷与永恒之国.jpg" alt="稻妻城鸟瞰" loading="lazy">
+        <div class="slide-caption">
+          <h2>雷与永恒之国</h2>
+          <p>雷电将军统御的永恒净土</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- 角色展示网格 -->
+  <section class="character-grid">
+    <!-- 钟离 -->
+    <div class="character-card">
+      <div class="character-art" style="background-image: url('./img/钟离.png')">
+        <div class="element-overlay anemo"></div>
+      </div>
+      <div class="character-info">
+        <h3>钟离</h3>
+        <span class="element-badge" style="background: #e6b422">岩元素</span>
+        <div class="stats">
+          <p>暴击率: 24.2% (+5% 突破)</p>
+          <p>元素精通: 96</p>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <button class="btn-detail">查看命之座 →</button>
+      </div>
+    </div>
+    <!-- 其他角色卡片... -->
+    <div class="character-card">
+      <div class="character-art" style="background-image: url('./img/魈.png')">
+        <div class="element-overlay anemo"></div>
+      </div>
+      <div class="character-info">
+        <h3>魈</h3>
+        <span class="element-badge" style="background: #74c2a8">风元素</span>
+        <div class="stats">
+          <p>暴击率: 24.2% (+5% 突破)</p>
+          <p>元素精通: 96</p>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <button class="btn-detail">查看命之座 →</button>
+      </div>
+    </div>
+    <!-- 胡桃 - 火元素 -->
+    <div class="character-card">
+      <div class="character-art" style="background-image: url('./img/胡桃.png')">
+        <div class="element-overlay pyro"></div>
+      </div>
+      <div class="character-info">
+        <h3>胡桃</h3>
+        <span class="element-badge" style="background: #ff5722">火元素</span>
+        <div class="stats">
+          <p>生命值上限: 15,552 (+20% HP)</p>
+          <p>暴击伤害: 88.4%</p>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <button class="btn-detail">查看命之座 →</button>
+      </div>
+    </div>
+    <!-- 雷电将军 - 雷元素 -->
+    <div class="character-card">
+      <div class="character-art" style="background-image: url('./img/雷电将军.jpg')">
+        <div class="element-overlay electro"></div>
+      </div>
+      <div class="character-info">
+        <h3>雷电将军</h3>
+        <span class="element-badge" style="background: #c17dff">雷元素</span>
+        <div class="stats">
+          <p>元素充能效率: 32% (+30% 突破)</p>
+          <p>攻击力: 337（+56）</p>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <button class="btn-detail">查看命之座 →</button>
+      </div>
+    </div>
+    <!-- 甘雨 - 冰元素 -->
+    <div class="character-card">
+      <div class="character-art" style="background-image: url('./img/甘雨.jpg')">
+        <div class="element-overlay cryo"></div>
+      </div>
+      <div class="character-info">
+        <h3>甘雨</h3>
+        <span class="element-badge" style="background: #6ac2e3">冰元素</span>
+        <div class="stats">
+          <p>暴击伤害: 38.4% (+20% 突破)</p>
+          <p>攻击速度: 12%</p>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <button class="btn-detail">查看命之座 →</button>
+      </div>
+    </div>
+    <!-- 夜兰 - 水元素 -->
+    <div class="character-card">
+      <div class="character-art" style="background-image: url('./img/夜兰.jpg')">
+        <div class="element-overlay hydro"></div>
+      </div>
+      <div class="character-info">
+        <h3>夜兰</h3>
+        <span class="element-badge" style="background: #4ec0e8">水元素</span>
+        <div class="stats">
+          <p>生命值: 14,495 (+18% HP)</p>
+          <p>暴击率: 24.2%</p>
+        </div>
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <button class="btn-detail">查看命之座 →</button>
+      </div>
+    </div>
+    <!-- 神里绫华 - 冰元素 -->
+  <div class="character-card">
+    <div class="character-art" style="background-image: url('./img/神里凌华.jpg')">
+      <div class="element-overlay cryo"></div>
+    </div>
+    <div class="character-info">
+      <h3>神里绫华</h3>
+      <span class="element-badge" style="background: #4ec0e8">冰元素</span>
+      <div class="stats">
+        <p>基础攻击: 342</p>
+        <p>暴击伤害: 88.4%</p>
+        <p>元素充能: 120%+</p>
+      </div>
+      <div class="rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <button class="btn-detail" data-constellation="雪鹤座">
+        命之座效果 →
+      </button>
+    </div>
+  </div>
+  <!-- 申鹤 - 冰元素 -->
+  <div class="character-card">
+    <div class="character-art" style="background-image: url('./img/申鹤.jpg')">
+      <div class="element-overlay cryo"></div>
+    </div>
+    <div class="character-info">
+      <h3>申鹤</h3>
+      <span class="element-badge" style="background: #4ec0e8">冰元素</span>
+      <div class="stats">
+        <p>基础攻击: 3140</p>
+        <p>元素充能: 180%+</p>
+        <p>攻击加成: 3200+</p>
+      </div>
+      <div class="rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <button class="btn-detail" data-constellation="愁疏座">
+        命之座效果 →
+      </button>
+    </div>
+  </div>
+  </section>
+  <!-- 统计模块 -->
+  <div class="stats-container">
+    <div class="stat-item">
+      <i class="fas fa-users fa-3x"></i>
+      <span class="counter">85,000,000</span>
+      <p>全球注册旅行者</p>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-trophy fa-3x"></i>
+      <span class="counter">92%</span>
+      <p>成就达成率</p>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-globe-asia fa-3x"></i>
+      <span class="counter">157</span>
+      <p>覆盖国家/地区</p>
+    </div>
+  </div>
+  <!-- 游戏背景与剧情 -->
+  <section class="story-section">
+    <h2>探索提瓦特大陆</h2>
+    <p>在这片神秘的大陆上，玩家将扮演“旅行者”，踏上寻找失散的亲人的冒险之旅。探索不同的城市、结识各种伙伴，解锁各类元素力量，一步步揭开这片大陆的秘密。</p>
+  </section>
+  <!-- 新闻资讯模块 -->
+  <section class="news-section">
+    <div class="news-item">
+      <h3>最新活动：风花节庆</h3>
+      <p>来参加蒙德城的风花节，与世界各地的旅行者一同庆祝这场欢乐的盛宴！</p>
+    </div>
+    <div class="news-item">
+      <h3>新版本上线：深渊探险</h3>
+      <p>新的版本带来了全新的深渊副本，挑战你的极限！快来试试你的运气吧。</p>
+    </div>
+    <div class="news-item">
+      <h3>新角色：神秘的璃月少年</h3>
+      <p>新角色登场！从璃月来到提瓦特的少年，将会带给你全新的冒险与故事。</p>
+    </div>
+  </section>
+  <!-- 联系我们模块 -->
+  <section class="contact-section">
+    <h2>联系我们</h2>
+    <p>如果你有任何问题或建议，欢迎通过以下方式联系我们。</p>
+    <a href="mailto:support@genshin.com">联系我们</a>
+  </section>
+  <!-- 脚本 -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
